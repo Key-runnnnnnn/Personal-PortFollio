@@ -257,7 +257,7 @@ const All = () => {
         >
           <h1 className="text-2xl font-bold text-center ">All Projects</h1>
           <h1 className="text-2xl font-bold text-center">Test url : <a href="http://localhost:3000" className="underline">Link</a></h1>
-          <h1 className="text-2xl font-bold text-center">Deploy url : <a href="https://portfolio-bz4n.onrender.com/" className="underline">Link</a></h1>
+          <h1 className="text-2xl font-bold text-center">Deploy url : <a href="https://personal-portfollio.onrender.com/" className="underline">Link</a></h1>
         </div>
 
         <div
