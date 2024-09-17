@@ -3,7 +3,7 @@ import { useTheme } from "../../context/Isdarkmode";
 import Typewriter from "typewriter-effect";
 import "../../tailwind.css";
 import handIcon from "/assets/Icon-assets/hand.ico";
-import Avatar from "/assets/Icon-assets/profile-pic.png";
+import Avatar from "/assets/Icon-assets/pic2.png";
 
 const Intro = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
