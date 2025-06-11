@@ -6,6 +6,7 @@ import 'typeface-poppins';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from "./context/Authcontext";
 import { ThemeProvider } from "./context/Isdarkmode";
+import "./lib/firebaseConfig.js";
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

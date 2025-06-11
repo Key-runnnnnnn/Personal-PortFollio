@@ -1,8 +1,18 @@
+import React, { useEffect } from "react";
 import { Toaster } from "react-hot-toast";
 import Portfolio from "./pages/Portfolio";
-import { account, ID } from './lib/appwrite';
+import { analytics } from "./lib/firebaseConfig";
+import { logEvent } from "firebase/analytics";
 
 function App() {
+  useEffect(() => {
+    logEvent(analytics, "page_view", {
+      page_path: window.location.pathname,
+      page_location: window.location.href,
+      page_title: document.title,
+    });
+  }, []); // Empty dependency array to run only once on mount
+
   return (
     <>
       <Portfolio />
@@ -12,20 +22,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <Routes>
-        <Route
-          path="/"
-          element={authUser ? <Home /> : <Navigate to="/login" />}
-        />
-        <Route
-          path="/login"
-          element={authUser ? <Navigate to="/" /> : <Login />}
-        />
-        <Route
-          path="/signup"
-          element={authUser ? <Navigate to="/" /> : <Signup />}
-        />
-      </Routes> */
-}
